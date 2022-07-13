@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    background-color: #F9F2ED;
+}
+
+.side-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    background-color: #3AB0FF;
+    border-bottom-right-radius: 100px;
+}
+
+.side-bar img {
+    margin-top: -100px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    background-color: #F9F2ED;
+}
+
+.content table {
+    background-color: #FFB562;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+.content table th {
+    font-size: 18px;
+    background-color: #F87474;
+}
+
+.content table th,
+.content table td {
+    text-align: left;
+    padding: 10px 30px;
+}
+
+.btn {
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+    background: #3AB0FF;
+    border-radius: 20px;
+}
+.btn:nth-child(2) {
+    background: #F87474;
+}
+
+.side-bar h2 {
+    width: 40%;
+    font-weight: bold;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    border-bottom: 5px solid rgba(128, 128, 128, 0.525);
+}
+
+.side-bar ul li {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.side-bar ul li p {
+    cursor: pointer;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-weight: medium;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.form-input {
+    display: none;
+    width: 500px;
+    background-color: #FFB562;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation: fade-up 1s forwards;
+}
+
+.form-input h1 {
+    width: 100%;
+    height: auto;
+    background-color: #F87474;
+}
+
+.form-input form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.form-input form h3 {
+    padding-bottom: 10px;
+}
+
+.form-input form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+}
+
+.form-input form button {
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #3AB0FF;
+    font-size: 22px;
+    letter-spacing: 5px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.form-update {
+    width: 500px;
+    background-color: #FFB562;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation: fade-up 1s forwards;
+}
+
+.form-update h1 {
+    width: 100%;
+    height: auto;
+    background-color: #F87474;
+}
+
+.form-update form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.form-update form h3 {
+    padding-bottom: 10px;
+}
+
+.form-update form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+}
+
+.form-update form button {
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #3AB0FF;
+    font-size: 22px;
+    letter-spacing: 5px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.about {
+    display: none;
+}
+.about h1 {
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.about table {
+    background-color: #e1e1e1;
+}
+
+@keyframes fade-up{
+    from{
+        transform:translateY(50px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
